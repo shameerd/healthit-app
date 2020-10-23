@@ -1,0 +1,39 @@
+<div class="p50">
+    <div id="state-sec" class="row state-bg">
+        <h1><span>Period: Year 2015</span></h1>
+        <div class="p30">
+            <label class="pr15" for="state">State</label>
+            <p-dropdown [options]="stateList" optionLabel="region" (onChange)=stateSeleted($event.value)
+                [style]="{'width':'150px'}"></p-dropdown>
+        </div>
+    </div>
+    <div id="form-sec" class="row">
+        <div class="col form-bg">
+            <h1><span>{{stateSelected}}</span></h1>
+            <div class="row">
+                <div class="label">At Least One Measure</div>
+                <div class="value">{{stats.atleast_one_measure}}</div>
+            </div>
+            <div class="row">
+                <div class="label">Immunization Measure</div>
+                <div class="value">{{stats.immunization_measure}}</div>
+            </div>
+            <div class="row">
+                <div class="label">Reportable Results</div>
+                <div class="value">{{stats.reportable_lab_results_measure}}</div>
+            </div>
+            <div class="row">
+                <div class="label">Syndromic Measure</div>
+                <div class="value">{{stats.syndromic_surveillance_measure}}</div>
+            </div>
+            <div class="row">
+                <div class="label">Registry Measure</div>
+                <div class="value">{{stats.registry_measure}}</div>
+            </div>
+
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>

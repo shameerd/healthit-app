@@ -1,0 +1,50 @@
+$txt-right: right;
+$label-color: aliceblue;
+
+#state-sec h1 {
+  text-align: left;
+  margin-top: -10px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+#state-sec h1 span,
+#form-sec h1 span {
+  background-color: $label-color;
+}
+
+#form-sec h1 {
+  text-align: left;
+  margin-top: -33px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.state-bg {
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.form-bg {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.label {
+  width: 50%;
+  text-align: $txt-right;
+}
+
+.value {
+  width: 30%;
+  text-align: $txt-right;
+}
